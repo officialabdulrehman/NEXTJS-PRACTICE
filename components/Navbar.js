@@ -1,12 +1,21 @@
+import Link from "next/link";
+
 export const Navbar = () => {
   return (
-    <div>
-      <h1>Navbar</h1>
-      <a>Home</a>
-      <a>Home</a>
-      <a>About</a>
-      <a>Ninjas Listing</a>
-    </div>
+    <nav>
+      <div className="logo">
+        <h1>Navbar</h1>
+      </div>
+      <Link href="/">
+        <a>Home</a>
+      </Link>
+      <Link href="/about">
+        <a>About</a>
+      </Link>
+      <Link href="/ninjas">
+        <a>Ninjas Listing</a>
+      </Link>
+    </nav>
   );
 };
 
